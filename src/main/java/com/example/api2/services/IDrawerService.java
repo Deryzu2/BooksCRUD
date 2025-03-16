@@ -8,4 +8,12 @@ public interface IDrawerService {
     Drawer findById(Long id);
     Drawer save(Drawer drawer);
     Drawer delete(long id);
+    Drawer update(Long id, Drawer drawer);
+
+    void delete(Long id);
+
+
 }
+
+
+
