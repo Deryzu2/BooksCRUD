@@ -14,7 +14,17 @@ public class DrawerServiceImpl implements IDrawerService {
     }
 
     @Override
+    public Drawer findById(Long id) {
+        return drawerRepository.findById(id).orElse(null);
+    }
+
+    @Override
     public Drawer save(Drawer drawer) {
         return drawerRepository.save(drawer);
+    }
+
+    @Override
+    public void delete(Long id){
+        drawerRepository.deleteById(id);
     }
 }

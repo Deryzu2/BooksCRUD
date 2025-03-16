@@ -23,6 +23,8 @@ public class Drawer extends BaseEntity{
     @JoinColumn(name = "book_id")
     private Book book;
 
+    private int capacity;
+    private String status;
 
 
 }
